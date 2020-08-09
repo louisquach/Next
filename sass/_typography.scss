@@ -1,0 +1,63 @@
+.content {
+    background-color: violet;
+}
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+.heading_1 {
+    @extend %heading;
+    color: $color-grey-light-1;
+    line-height: 1;
+    font-size: 4.5rem;
+}
+
+.heading_2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    &--light {color: $color-grey-light-1;}
+    &--dark {color: $color-grey-dark-1;}
+    line-height: 1;
+}
+.heading_3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-transform: uppercase;
+}
+.heading_4 {
+    @extend %heading;
+    font-size: 1.9rem;
+    &--light {color: $color-grey-light-1;}
+    &--dark {color: $color-grey-dark-1;}
+}
+.btn {
+    color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    padding: 1.8rem 3rem;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $color-primary;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+
+.mb-lg {
+    margin-bottom: 4rem;
+}
